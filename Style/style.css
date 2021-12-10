@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+.footer li {
+    list-style: none;
+
+}
+
+/* Main*/
+
+
+
+.restau
+{
+    background-color: lightgray;
+}
+
+
+.restau-carte
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carte
+{
+    width: 50%;
+    text-decoration: none; 
+    background-color: white;
+    border-radius: 1px;
+
+}
+
+    
+    .restau img
+{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.footer
+{
+    background-color: #353535;
+    color: white;
+}
+footer a
+{
+    color: white;
+}
