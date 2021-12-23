@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+    font-family: 'shrikhand';
+    src: url(../font/Shrikhand/Shrikhand-Regular.otf);
+}
+
+body {
+    margin: 0px;
+    font-family: 'roboto';
+}
+
+a {
+    text-decoration: none;
+}
+
+/*footer General*/
+.footer li {
+    list-style: none;
+
+}
+
+.footer {
+    background-color: #353535;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
 
 
 .logo 
@@ -10,13 +41,103 @@
     width: 45%;
 }
 
-
-.plat
+/* menu header */
+.plat_img
 {
     width: 100%;
+    position: relative;
 }
-.plat img
+.plat_img img
 {
     width:100%;
 
+}
+
+.main_menu
+{
+    margin-top: -3em;
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.menu_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8em;
+}
+.menu_header h2
+{
+    font-family: 'shrikhand';
+}
+/*Menu */
+.plat
+{
+    padding: 1em;
+}
+.plat h3
+{
+    text-transform: uppercase;
+}
+
+.plat_s
+{
+    background-color: #fff;
+    padding-left: 0.6em;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.delay_0
+{
+    animation-delay: 0s;
+}
+.delay_1
+{
+    animation-delay: 0.1s;
+}
+.delay_2
+{
+    animation-delay: 0.2s;
+}
+.plat_titre, .plat_descri
+{
+    margin:0;
+}
+
+.plat_text
+{
+
+}
+.plat_prix
+{
+    font-weight: 700;
+}
+.plat_slide
+{
+    background-color: #99e2d0;
+    width: 3em;
+    height: 3.2em;
+    border-radius: 0 0.75em 0.75em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -3em;
+}
+
+.plat_slide_logo
+{
+    color: #fff;
+
+}
+.plat_s:hover .plat_slide
+{
+    margin-right: 0em;
 }
