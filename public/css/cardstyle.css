@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'roboto';
-    src: url(../font/Roboto/Roboto-Medium.ttf);
+    src: url(../font/Roboto/Roboto-Medium.ttf) format("truetype");
     font-family: 'shrikhand';
     src: url(../font/Shrikhand/Shrikhand-Regular.otf);
 }
@@ -15,12 +15,25 @@ a {
 }
 
 /*footer General*/
+.footer
+{
+    padding: 1.5em;
+}
+.logo_footer
+{
+    font-family: 'shrikhand';
+}
 .footer li {
     list-style: none;
+    margin: 0.4em;
 
 }
-
-.footer {
+.footer_list
+{
+    margin: 0;
+    padding: 0;
+}
+footer {
     background-color: #353535;
     color: white;
 }
@@ -29,7 +42,7 @@ footer a {
     color: white;
 }
 
-
+/* logo */
 
 .logo 
 {
@@ -57,7 +70,7 @@ footer a {
 {
     margin-top: -3em;
     border-radius: 2rem 2rem 0 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     background-color: #f6f6f6;
 }
@@ -81,7 +94,6 @@ footer a {
 {
     text-transform: uppercase;
 }
-
 .plat_s
 {
     background-color: #fff;
@@ -132,12 +144,20 @@ footer a {
     margin: -3em;
 }
 
-.plat_slide_logo
-{
-    color: #fff;
-
-}
 .plat_s:hover .plat_slide
 {
     margin-right: 0em;
+    transition: 0.5s;
+}
+
+.plat_slide_logo
+{
+    color: #fff;
+    transform: rotate(90deg);
+
+}
+.plat_s:hover .plat_slide_logo
+{  
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
 }
