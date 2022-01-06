@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'roboto';
-    src: url(../font/Roboto/Roboto-Medium.ttf);
-      font-family: 'shrikhand';
-    src: url(../font/Shrikhand/Shrikhand-Regular.otf);
+    src: url(font/Roboto/Roboto-Medium.ttf);
+    font-style: normal;
 }
-
-
+ @font-face {
+     font-family: 'shrikhand';
+    src: url(font/Shrikhand/Shrikhand-Regular.otf);
+    font-style: normal;
+}
 
 body {
     margin: 0px;
@@ -14,196 +16,209 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .footer li {
     list-style: none;
 
 }
-.footer2 h1
-{
+
+.footer2 h1 {
+    font-family: 'shrikhand';
+}
+
+/* header */
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
     font-family: 'shrikhand';
 }
 
 
-
-/* Media queries Mobiles*/
-
-
-@media screen and (max-width :320px) {
-
-    /* header */
-    .logo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        position: relative;
-        justify-content: space-around;
-        font-family: 'shrikhand';
-    }
-
-
-    .logo img {
-        width: 60%;
-        padding-bottom: 1em;
-        padding-top: 1em;
-    }
-
-
-    /*Nav */
-
-    .local {
-        display: flex;
-        justify-content: center;
-        padding: 1.25em 1em;
-        background-color: #b9b9b9;
-        font-size: 1.2em;
-    }
-
-    .local__icon {
-        margin-right: 1em;
-    }
-
-    .local span {
-        font-weight: 700;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #f3f3f3;
-        padding: 1.2em;
-    }
-
-    .navtitre {
-
-        font-size: 1em;
-    }
-
-    .navtext {
-        font-size: 0.9em;
-    }
-
-    .navlink a {
-        color: none;
-    }
-
-    .navlink {
-        border: 0;
-        padding: 0.75rem 1.5rem;
-        font-weight: 500;
-        font-size: 1.1rem;
-        border-radius: 100px;
-        color: #fff;
-        /* background-color: #686868; */
-        background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
-        cursor: pointer;
-        transition-duration: .25s;
-        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-
-    }
-
-    /* Main*/
-    /*tutorial */
-    .tutotitre {
-        margin-top: 0px;
-    }
-
-    .tuto_steps {
-        margin: 0;
-        padding: 0;
-    }
-
-    .tuto_step {
-        padding: 1.5rem;
-        margin: 1rem 0 1rem 0.75rem;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-        border-radius: 1.25rem;
-        background-color: #f6f6f6;
-        display: flex;
-        position: relative;
-    }
-
-    .restau {
-        background-color: lightgray;
-    }
-
-
-    .restau-carte {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .carte {
-        width: 50%;
-        text-decoration: none;
-        background-color: white;
-        border-radius: 1px;
-
-    }
-
-
-    .restau img {
-        width: 100%;
-        height: 130px;
-        object-fit: cover;
-    }
-
-    .footer {
-        background-color: #353535;
-        color: white;
-    }
-
-    footer a {
-        color: white;
-    }
-
-    /*carte restaurant */
-
-    .restau-carte {
-
-    
-    }
-
-
-    .carte {
-        position: relative;
-        background-color: #fff;
-        width: 100%;
-        height: 250px;
-        border-radius: 1.5rem;
-        -webkit-box-shadow: 3px 8px 8px #dedada;
-        box-shadow: 3px 8px 8px #dedada;
-        margin: 0 0 3rem 0;
-    }
-
-    .restau_img {
-        border-radius: 1.5rem 1.5rem 0 0;
-        width: 100%;
-        height: 175px;
-        object-fit: cover;
-    }
-
-    .nouveau {
-        border-radius: 3px;
-        background-color: #99e2d0;
-        color: #217460;
-        padding: 5px;
-        position: absolute;
-        top: 12px;
-        right: 10px;
-    }
-
-    .carte_footer {
-        display: flex;
-        flex-direction: row;
-    }
-    .text {
-        width: 80%;
-    }
-        .coeur {
-        width: 20%;
-    }
+.logo img {
+    width: 60%;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
+
+/*Nav */
+
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 1.25em 1em;
+    background-color: #b9b9b9;
+    font-size: 1.2em;
+}
+
+.local__icon {
+    margin-right: 1em;
+}
+
+.local span {
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 1.2em;
+}
+
+.navtitre {
+
+    font-size: 1em;
+}
+
+.navtext {
+    font-size: 0.9em;
+}
+
+.navlink a {
+    color: none;
+}
+
+.navlink {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    /* background-color: #686868; */
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, .9), rgba(255, 121, 218, .9));
+    cursor: pointer;
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+
+}
+
+.nav_button {
+    display: flex;
+    justify-content: center;
+    padding: 0em 3em 3em 3em;
+}
+
+.nav_button_exp {
+    color: #fff;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    padding: 0.75em 2.6em;
+    border: 0;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 100px;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+
+.nav_button_exp:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
+    filter: brightness(105%);
+    cursor: pointer;
+}
+
+/* Main*/
+
+
+/*tutorial */
+.tutotitre {
+    margin-top: 1em;
+}
+
+
+
+.tuto_step {
+    padding: 1.5rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+
+}
+
+ol li:before {
+    background-color: #9356dc;
+    color: red;
+}
+
+.restau {
+    background-color: lightgray;
+}
+
+
+.restau-carte {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carte {
+    width: 50%;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1px;
+
+}
+
+
+.restau img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #353535;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/*carte restaurant */
+
+.carte {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 250px;
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 3px 8px 8px #dedada;
+    box-shadow: 3px 8px 8px #dedada;
+    margin: 0 0 3rem 0;
+}
+
+.restau_img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.nouveau {
+    border-radius: 3px;
+    background-color: #99e2d0;
+    color: #217460;
+    padding: 5px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.carte_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    width: 80%;
+}
+
+.coeur {
+    width: 20%;
+}
