@@ -472,8 +472,19 @@ footer a {
     .menu_header h2 {
         font-size: 1.3em;
     }
+    .plat_box
+    {
+        font-size: 0.8em;
+    }
 }
-
+/*Mobile (iphone 5) */
+@media screen and (min-width: 320px)
+{
+    .plat_box
+{
+    font-size: 1em;
+}
+}
 /*Tablette ajustement */
 @media screen and (min-width: 768px) {
     .plat_img img {
