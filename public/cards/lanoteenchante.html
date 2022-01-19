@@ -11,152 +11,187 @@
 </head>
 
 <body>
-
+    <!-- Loader -->
+    <div class="loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <header>
-
-        <nav>
+        <!-- Header Logo + Link-->
+        <div class="header">
+            <!-- Fleche-->
             <div class="retourlogo">
                 <a href="../../index.html"><i class="fa-arrow-left fas header_arrow"></i></a>
-
-                <div class="logo"><img class="logo_img" src="../img/logo/ohmyfood.png" alt="logo Ohmyfood"
-                        title="Logo Ohmyfood"></div>
             </div>
+            <!--Logo -->
+            <h1 class="logo">ohmyfood</h1>
+        </div>
 
-        </nav>
     </header>
 
     <main>
+        <!-- Image menu-->
         <div class="plat_img"><img src="../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"
                 title="La note enchantée"> </div>
-
+        <!-- Nom + coeur -->
         <div class="main_menu">
             <div class="menu_header">
                 <h2>La note enchantée</h2>
-                <div class="coeur_bloc hvr-icon-grow">
+                <div class="coeur_bloc">
                     <i class=" coeur_vide far fa-heart"></i>
-                    <i class=" coeur_full fas fa-heart hvr-icon"></i>
+                    <i class=" coeur_full fas fa-heart"></i>
                 </div>
             </div>
-            <div class="plat">
-                <h3>Entrées</h3>
-                <div class="plat_ligne"></div>
+            <div class="plat_box">
+                <!-- Menu-->
+                <div class="plat">
+                    <!-- Entrees -->
+                    <h3>Entrées</h3>
+                    <!-- Ligne sous titre -->
+                    <div class="plat_ligne"></div>
 
-
-                <section class="menuPlats delay-0">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Ravioles de foie gras</h4>
-                        <p class="menuPlats__description">Accompagnés de leur crème à la truffe</p>
-                    </header>
-                    <div class="menuPlats__prix">25€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle fa-rotate-90 menuPlats__icon"></i>
+                    <!-- Recettes -->
+                    <section class="menuPlats" id="delay-0">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Ravioles de foie gras</h4>
+                            <p class="menuPlats__description">Accompagnés de leur crème à la truffe</p>
+                        </header>
+                        <div class="menuPlats__prix">25€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-1">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Caviar osciètre</h4>
-                        <p class="menuPlats__description">Sur blini à la farine de blé noir</p>
-                    </header>
-                    <div class="menuPlats__prix">35€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-2">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Homard et espuma de potiron</h4>
-                        <p class="menuPlats__description">Mariné aux zestes d'orange</p>
-                    </header>
-                    <div class="menuPlats__prix">20€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-3">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Foie gras de canard cuit entier</h4>
-                        <p class="menuPlats__description">Confiture de figue et pain toasté</p>
-                    </header>
-                    <div class="menuPlats__prix">35€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-1">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Caviar osciètre</h4>
+                            <p class="menuPlats__description">Sur blini à la farine de blé noir</p>
+                        </header>
+                        <div class="menuPlats__prix">35€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-2">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Homard et espuma de potiron</h4>
+                            <p class="menuPlats__description">Mariné aux zestes d'orange</p>
+                        </header>
+                        <div class="menuPlats__prix">20€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-3">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Foie gras de canard cuit entier</h4>
+                            <p class="menuPlats__description">Confiture de figue et pain toasté</p>
+                        </header>
+                        <div class="menuPlats__prix">35€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="plat">
+                    <!-- Plats -->
+                    <h3>Plats</h3>
+                    <!-- Ligne sous titre -->
+                    <div class="plat_ligne"></div>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-4">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Noix de coquilles Saint-Jacques</h4>
+                            <p class="menuPlats__description">Sur lit de purée de céleri-rave</p>
+                        </header>
+                        <div class="menuPlats__prix">40€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-5">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Langoustine poêlée</h4>
+                            <p class="menuPlats__description">Purée de patate douce</p>
+                        </header>
+                        <div class="menuPlats__prix">35€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-6">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Mijoté de queue de boeuf</h4>
+                            <p class="menuPlats__description">Et riz sauvage aux zestes de citron</p>
+                        </header>
+                        <div class="menuPlats__prix">44€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="plat">
+                    <!-- Desserts -->
+                    <h3>Desserts</h3>
+                    <!-- Ligne sous titre -->
+                    <div class="plat_ligne"></div>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-7">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Macaron noisette et chocolat</h4>
+                            <p class="menuPlats__description">Glace au caramel brun et sel de Guérande</p>
+                        </header>
+                        <div class="menuPlats__prix">18€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-8">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Baba au rhum revisité </h4>
+                            <p class="menuPlats__description">Avec son coulis de citron</p>
+                        </header>
+                        <div class="menuPlats__prix">22€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                    <!-- Recettes-->
+                    <section class="menuPlats" id="delay-9">
+                        <header class="menuPlats__bloc">
+                            <h4 class="menuPlats__titre">Tarte au citron meringuée</h4>
+                            <p class="menuPlats__description">Déstructurée</p>
+                        </header>
+                        <div class="menuPlats__prix">23€</div>
+                        <!--Survol slide animation-->
+                        <div class="menuPlats__slide">
+                            <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-            <div class="plat">
-                <h3>Plats</h3>
-                <div class="plat_ligne"></div>
-
-                <section class="menuPlats delay-3">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Noix de coquilles Saint-Jacques</h4>
-                        <p class="menuPlats__description">Sur lit de purée de céleri-rave</p>
-                    </header>
-                    <div class="menuPlats__prix">40€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-4">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Langoustine poêlée</h4>
-                        <p class="menuPlats__description">Purée de patate douce</p>
-                    </header>
-                    <div class="menuPlats__prix">35€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-5">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Mijoté de queue de boeuf</h4>
-                        <p class="menuPlats__description">Et riz sauvage aux zestes de citron</p>
-                    </header>
-                    <div class="menuPlats__prix">44€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="plat">
-                <h3>Desserts</h3>
-                <div class="plat_ligne"></div>
-                <section class="menuPlats delay-6">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Macaron noisette et chocolat</h4>
-                        <p class="menuPlats__description">Glace au caramel brun et sel de Guérande</p>
-                    </header>
-                    <div class="menuPlats__prix">18€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-7">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Baba au rhum revisité </h4>
-                        <p class="menuPlats__description">Avec son coulis de citron</p>
-                    </header>
-                    <div class="menuPlats__prix">22€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-                <section class="menuPlats delay-8">
-                    <header class="menuPlats__bloc">
-                        <h4 class="menuPlats__titre">Tarte au citron meringuée</h4>
-                        <p class="menuPlats__description">Déstructurée</p>
-                    </header>
-                    <div class="menuPlats__prix">23€</div>
-                    <div class="menuPlats__slide">
-                        <div class="menuPlats__logo"> <i class="fas fa-check-circle menuPlats__icon"></i> </div>
-                    </div>
-                </section>
-
-            </div>
-
+            <!-- Button commander-->
             <div class="button">
                 <button class="button_cmd">Commander</button>
 
@@ -188,7 +223,6 @@
                 <li> <a href="mailto:contact@ohmyfood.com">Contact</a>
                 </li>
             </ul>
-            </a>
         </div>
 
     </footer>

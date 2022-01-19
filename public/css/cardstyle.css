@@ -1,3 +1,4 @@
+/* Polices */
 @font-face {
     font-family: 'roboto';
     src: url(font/Roboto/Roboto-Medium.ttf);
@@ -24,36 +25,141 @@ a {
     text-decoration: none;
 }
 
+/* Loader (position + animation fade away) */
+
+.loader {
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: loader_cache 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 80%);
+
+}
+
+@keyframes loader_cache {
+
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
+
+}
+
+/* Loader (animation du loader) */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+    background: #9356DC;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+    background: #FF79DA;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+    background: #99E2D0;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+    background: #9356DC;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
 /* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Logo Ohmyfood*/
+.logo {
+    font-family: 'shrikhand';
+    width: 100%;
+}
+
+/* Fleche*/
 .retourlogo {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    width: 0%;
+    z-index: 1;
 }
 
-nav a {
-    width: 10%;
+.retourlogo a {
     padding: 1em;
-    font-size: 1rem;
-    color: black;
+    color: rgb(71, 68, 68);
 }
 
-.logo {
-    width: 80%;
-    padding: 1em;
+.header_arrow:hover {
+    color: #99E2D0;
+    cursor: pointer;
 }
 
-.logo_img {
-    width: 75%;
-}
-.header_arrow:hover
-{
-    color:#99E2D0;
-    cursor:pointer;
-}
+/* menu header                */
 
-/*=======================================================*/
-
-/* menu header */
+/* image menu*/
 .plat_img {
     width: 100%;
     position: relative;
@@ -64,70 +170,8 @@ nav a {
     width: 100%;
     height: 14em;
 }
-/*coeur animation*/
-.coeur_vide
-{
-    position: absolute;
-}
-.coeur_full
-{
-    color: transparent;
-    position: absolute;
 
-}
-.coeur_full:hover
-{
-    color:#99E2D0;
-    opacity: 1;
-    transition: all 0.3s linear 0s;
-}
-.coeur_vide:hover
-{
-    transition: all 0.3s linear 0s;
-    color: transparent;
-}
-.coeur_bloc
-{
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 14px;
-    margin-right: 20px;
-}
-
-
-.hvr-icon-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .hvr-icon-grow .hvr-icon {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-icon-grow:hover .hvr-icon {
-    -webkit-transform: scale(1.3) translateZ(0);
-    transform: scale(1.3) translateZ(0);
-  }
-/*----------------------*/
-
-.main_menu {
-    margin-top: -3em;
-    border-radius: 2rem 2rem 0 0;
-    position: relative;
-    width: 100%;
-    background-color: #f6f6f6;
-}
-
+/* Menu Nom + coeur */
 .menu_header {
     display: flex;
     align-items: center;
@@ -140,7 +184,45 @@ nav a {
     font-weight: 500;
 }
 
-/*Menu Header */
+/*coeur animation*/
+.coeur_bloc {
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    display: flex;
+}
+
+.coeur_vide {
+    position: absolute;
+}
+
+.coeur_full {
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+/*hover c0eur*/
+.coeur_full:hover {
+    color: #99E2D0;
+    opacity: 1;
+    transform: scale(1.11);
+    cursor: pointer;
+
+}
+
+/* Menu bloc                               */
+.main_menu {
+    margin-top: -3em;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    width: 100%;
+    background-color: #f6f6f6;
+    max-width: 1366px;
+}
+
+/*Menu titre */
 .plat {
     padding: 0em 1em 0.2em 1em;
 }
@@ -152,6 +234,7 @@ nav a {
     margin-bottom: 6px;
 }
 
+/*Ligne sous titre*/
 .plat_ligne {
     background-color: #99E2D0;
     margin: 0;
@@ -159,18 +242,6 @@ nav a {
     width: 47px;
 }
 
-/*Menu plat*/
-.menuPlats {
-    background-color: #fff;
-    padding: 0.8em;
-    display: flex;
-    border-radius: 0.75em;
-    margin: 1em 0;
-    box-shadow: 5px 5px 5px 0px #04040426;
-    overflow: hidden;
-    cursor: pointer;
-    animation: myAnim 1s ease 0s 1 normal forwards;
-    }
 
 /* Animation + delay apparition plat*/
 @keyframes myAnim {
@@ -185,43 +256,64 @@ nav a {
     }
 }
 
-.delay-0 {
+#delay-0 {
     animation-delay: 0s;
 }
 
-.delay-1 {
+#delay-1 {
     animation-delay: 0.2s;
 }
 
-.delay-2 {
+#delay-2 {
     animation-delay: 0.3s;
+
 }
 
-.delay-3 {
+#delay-3 {
     animation-delay: 0.4s;
+
 }
 
-.delay-4 {
+#delay-4 {
     animation-delay: 0.5s;
+    ;
 }
 
-.delay-5 {
+#delay-5 {
     animation-delay: 0.6s;
+    ;
 }
 
-.delay-6 {
+#delay-6 {
     animation-delay: 0.7s;
 }
 
-.delay-7 {
+#delay-7 {
     animation-delay: 0.8s;
 }
 
-.delay-8 {
+#delay-8 {
     animation-delay: 0.9s;
 }
 
-/*Menu plat suite*/
+#delay-9 {
+    animation-delay: 1s;
+}
+
+/*Menu plats Bloc text*/
+.menuPlats {
+    background-color: #fff;
+    padding: 0.8em;
+    display: flex;
+    border-radius: 0.75em;
+    margin: 1em 0;
+    box-shadow: 5px 5px 5px 0px #04040426;
+    overflow: hidden;
+    cursor: pointer;
+    animation: myAnim 1s ease 2s 1 normal forwards;
+}
+
+/*Titre plats + ingredients*/
 .menuPlats__bloc {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -237,16 +329,7 @@ nav a {
     font-size: 0.95em;
     margin-bottom: 0.2em;
 }
-/*menu plats poulet herbes les delices des sens*/
-.menuPlats__titre_poulet {
-    margin: 0;
-    white-space: pre-wrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 0.95em;
-    margin-bottom: 0.2em;
-}
-/*----------------------------------------------*/
+
 .menuPlats__description {
     margin: 0;
     white-space: nowrap;
@@ -257,6 +340,17 @@ nav a {
     font-size: 0.8em;
 }
 
+/*plats (poulet herbes les delices des sens) ingredient trop long ajustement*/
+.menuPlats__titre_poulet {
+    margin: 0;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.95em;
+    margin-bottom: 0.2em;
+}
+
+/* Prix plats*/
 .menuPlats__prix {
     font-weight: bold;
     display: flex;
@@ -266,6 +360,7 @@ nav a {
     font-size: 0.8em;
 }
 
+/*Slide survol */
 .menuPlats__slide {
     background-color: #99E2D0;
     margin: -1em -4.4em -1em 1em;
@@ -333,6 +428,7 @@ nav a {
 /*footer General*/
 .footer {
     padding: 1.5em;
+    max-width: 1366px;
 }
 
 .logo_footer {
@@ -359,9 +455,98 @@ footer {
 footer a {
     color: white;
 }
-.hand
-{margin-right: 3px;}
-.couvert
-{
+
+/*icon avec different taille ajustement marge*/
+.hand {
+    margin-right: 3px;
+}
+
+.couvert {
     margin-right: 10px;
+}
+
+/*Ajustement pour plus petite taille d'ecran (Galaxy Fold)*/
+@media screen and (min-width: 280px) {
+    /*ajustement taille nom restaurant*/
+
+    .menu_header h2 {
+        font-size: 1.3em;
+    }
+}
+
+/*Tablette ajustement */
+@media screen and (min-width: 768px) {
+    .plat_img img {
+        height: 30em;
+    }
+
+    /*ajustement taille nom restaurant*/
+
+    .menu_header h2 {
+        font-size: 2.3em;
+    }
+
+    .coeur_bloc {
+        font-size: 2em;
+    }
+
+    /*ajustement plat box */
+    .plat_box {
+        font-size: 1.3em;
+    }
+
+    .menuPlats:hover .menuPlats__slide {
+        margin-right: -1.1rem;
+    }
+
+    .button {
+        font-size: 2em;
+    }
+
+}
+
+/*Desktop screen a partir  1024px */
+@media screen and (min-width: 1024px) {
+
+    /*taille police header*/
+    .header {
+        font-size: 1.2em;
+    }
+
+    /*ajustement plat box */
+    .plat_box {
+        display: flex;
+        font-size: 1em;
+        justify-content: center;
+    }
+
+    .plat {
+        width: 29%;
+    }
+
+    .menu_header {
+        justify-content: space-around;
+        font-size: 1.5em;
+    }
+
+    .coeur_bloc {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: 1.2em;
+    }
+}
+
+/*Desktop screen a partir 1366px*/
+@media screen and (min-width: 1366px) {
+
+    .main_menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        margin: auto;
+    }
 }
