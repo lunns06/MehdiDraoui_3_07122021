@@ -2,10 +2,12 @@
 Troisième projet du parcours "Développeur web" chez OpenClassroom, l'objectif etant d'apprendre a dynamisez une page web avec des animations CSS. 
 
 Le projet est disponible sur github a l'adresse suivante  :
-https://github.com/lunns06/MehdiDraoui_3_07122021.git
+https://lunns06.github.io/MehdiDraoui_3_07122021/
 
 
 
+
+lien git : https://github.com/lunns06/MehdiDraoui_3_07122021.git
 
 Intitulez du projet :
 
